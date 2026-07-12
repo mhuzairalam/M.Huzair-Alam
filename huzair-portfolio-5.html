@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-80KKS4HN63"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-80KKS4HN63');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>M. Huzair Alam Digital Marketing Expert</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+:root{
+  --bg:#111113;
+  --surface:#17171a;
+  --card:#1d1d21;
+  --border:#28282e;
+  --border2:#38383f;
+  --fg:#e8e8ed;
+  --muted:#636370;
+  --accent:#b4b4c0;
+  --r:10px;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--fg);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:300;height:60px;
+  display:flex;align-items:center;justify-content:space-between;padding:0 64px;
+  background:rgba(17,17,19,0.9);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.logo{font-family:'DM Serif Display',serif;font-size:1.05rem;color:var(--fg);}
+.logo em{font-style:italic;color:var(--accent);}
+.nav-links{display:flex;gap:36px;}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.73rem;letter-spacing:.12em;text-transform:uppercase;transition:color .2s;}
+.nav-links a:hover{color:var(--fg);}
+.nav-btn{padding:8px 20px;border-radius:6px;background:var(--fg);color:var(--bg);font-size:.71rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:opacity .2s;}
+.nav-btn:hover{opacity:.82;}
+
+/* ── HERO ── */
+#hero{
+  min-height:100vh;padding-top:60px;
+  display:grid;grid-template-columns:1fr 320px;
+  align-items:center;gap:64px;
+  max-width:1200px;margin:0 auto;padding-left:80px;padding-right:80px;
+  position:relative;
+}
+#hero::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px);
+  background-size:72px 72px;
+}
+.hero-left{position:relative;z-index:2;}
+
+.status-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:6px 18px;border:1px solid var(--border2);border-radius:100px;
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:28px;animation:fadeUp .7s ease both;
+}
+.s-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;flex-shrink:0;
+  box-shadow:0 0 6px #4ade80;animation:blink 2s ease infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+
+.h-name{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(2.2rem,4vw,3.8rem);font-weight:400;line-height:1.05;
+  letter-spacing:-0.02em;text-rendering:optimizeLegibility;
+  animation:fadeUp .7s .07s ease both;
+}
+.h-name em{font-style:italic;color:var(--accent);display:block;}
+
+.h-sub{
+  margin-top:20px;font-size:.9rem;color:var(--muted);line-height:1.85;max-width:420px;
+  animation:fadeUp .7s .14s ease both;
+}
+.h-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;animation:fadeUp .7s .19s ease both;}
+.pill{padding:5px 13px;border:1px solid var(--border);border-radius:100px;font-size:.68rem;color:var(--muted);letter-spacing:.05em;text-decoration:none;cursor:pointer;display:inline-block;transition:border-color .2s,color .2s;}
+.pill:hover{border-color:var(--accent);color:var(--fg);}
+
+.h-actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap;animation:fadeUp .7s .24s ease both;}
+.btn{padding:12px 26px;border-radius:7px;font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .22s;display:inline-flex;align-items:center;gap:8px;}
+.btn-w{background:var(--fg);color:var(--bg);}
+.btn-w:hover{opacity:.85;transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.5);}
+.btn-g{background:transparent;color:var(--accent);border:1px solid var(--border2);}
+.btn-g:hover{border-color:var(--accent);color:var(--fg);transform:translateY(-2px);}
+
+/* ── PHOTO ── */
+.hero-right{position:relative;z-index:2;animation:fadeLeft .85s .1s ease both;}
+@keyframes fadeLeft{from{opacity:0;transform:translateX(36px)}to{opacity:1;transform:none}}
+
+.photo-scene{position:relative;width:280px;height:280px;max-width:100%;margin:0 auto;}
+.photo-scene::before,.photo-scene::after{
+  content:'';position:absolute;width:36px;height:36px;
+  border-color:var(--border2);border-style:solid;
+}
+.photo-scene::before{top:-7px;left:-7px;border-width:1px 0 0 1px;}
+.photo-scene::after{bottom:-7px;right:-7px;border-width:0 1px 1px 0;}
+
+.photo-box{
+  width:100%;height:100%;border-radius:50%;
+  background:var(--card);border:1px solid var(--border);
+  overflow:hidden;display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.photo-box::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(17,17,19,.35) 0%,transparent 45%);
+  pointer-events:none;z-index:2;
+}
+
+/* ─── PHOTO PLACEHOLDER ─── */
+.ph-wrap{
+  display:flex;flex-direction:column;align-items:center;gap:16px;
+  color:var(--border2);
+}
+.ph-icon{
+  width:72px;height:72px;border-radius:50%;
+  border:2px dashed var(--border2);
+  display:flex;align-items:center;justify-content:center;
+}
+.ph-icon svg{width:32px;height:32px;stroke:var(--border2);}
+.ph-text{font-size:.75rem;color:var(--muted);letter-spacing:.06em;text-align:center;line-height:1.8;}
+
+/*
+══════════════════════════════════════════════
+  PHOTO LAGANE KA TARIKA Notepad mein karo
+══════════════════════════════════════════════
+  1. imgbb.com par jao (free, fast)
+  2. Upload Photo → "Direct Link" copy karo
+  3. Is file mein Ctrl+F se dhundo:
+       <div class="ph-wrap">
+  4. Us poore <div class="ph-wrap">...</div>
+     ko DELETE karo
+  5. Us jagah yeh paste karo:
+       <img src="TUMHARA_LINK_YAHAN"
+            alt="M. Huzair Alam"
+            style="width:100%;height:100%;
+                   object-fit:cover;display:block;
+                   position:absolute;inset:0;z-index:1;"/>
+  6. Save → GitHub par upload
+══════════════════════════════════════════════
+*/
+
+.photo-badge{
+  position:relative;margin:18px auto 0;width:fit-content;z-index:5;
+  background:transparent;
+  border:none;border-radius:0;padding:0;
+  display:flex;align-items:center;gap:10px;
+}
+.badge-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;flex-shrink:0;
+  box-shadow:0 0 7px #4ade80;animation:blink 2s infinite;}
+.badge-name{font-size:.73rem;color:var(--fg);font-weight:500;}
+.badge-sub{font-size:.63rem;color:var(--muted);margin-top:2px;}
+
+/* ── SECTION COMMONS ── */
+.wrap{max-width:1120px;margin:0 auto;padding:0 64px;}
+section{padding:108px 0;}
+.sec-dark{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.ey{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:11px;}
+.sh{font-family:'DM Serif Display',serif;font-size:clamp(2.1rem,3.8vw,3.1rem);font-weight:400;color:var(--fg);line-height:1.1;margin-bottom:11px;}
+.sh em{font-style:italic;color:var(--accent);}
+.rule{width:34px;height:1px;background:var(--border2);margin-bottom:52px;}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:start;}
+.ab-text p{color:#999;line-height:2;font-size:.93rem;margin-bottom:15px;}
+.ab-text p strong{color:var(--fg);font-weight:500;}
+.ab-note{
+  margin-top:22px;padding:15px 18px;
+  border-left:2px solid var(--border2);
+  background:var(--card);border-radius:0 6px 6px 0;
+  font-size:.8rem;color:var(--muted);line-height:1.75;
+}
+.ab-note strong{color:var(--accent);}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:26px 20px;transition:border-color .2s,transform .2s;}
+.stat:hover{border-color:var(--border2);transform:translateY(-3px);}
+.stat-n{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--fg);line-height:1;margin-bottom:5px;}
+.stat-l{font-size:.7rem;color:var(--muted);letter-spacing:.04em;}
+
+/* ── SKILLS ── */
+.skills-list{display:flex;flex-direction:column;gap:3px;}
+.sk-item{
+  border:1px solid var(--border);border-radius:var(--r);
+  overflow:hidden;background:var(--card);transition:border-color .2s;
+}
+.sk-item.open{border-color:var(--border2);}
+.sk-head{
+  display:flex;align-items:center;gap:16px;
+  padding:18px 22px;cursor:pointer;user-select:none;
+  transition:background .18s;
+}
+.sk-head:hover{background:rgba(255,255,255,.022);}
+
+/* LOGO BOX */
+.sk-logo{
+  width:32px;height:32px;border-radius:7px;
+  background:#fff;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;overflow:hidden;padding:5px;
+}
+.sk-logo img{width:100%;height:100%;object-fit:contain;display:block;max-width:22px;max-height:22px;}
+
+.sk-label{flex:1;font-size:.88rem;font-weight:500;color:var(--fg);}
+.sk-chevron{width:17px;height:17px;color:var(--muted);transition:transform .3s;flex-shrink:0;}
+.sk-item.open .sk-chevron{transform:rotate(180deg);}
+
+.sk-body{max-height:0;overflow:hidden;transition:max-height .38s cubic-bezier(.4,0,.2,1),padding .28s;padding:0 22px;}
+.sk-item.open .sk-body{max-height:260px;padding:0 22px 20px;}
+.sk-bar-bg{height:2px;background:var(--border);border-radius:1px;margin-bottom:14px;}
+.sk-bar-fill{height:2px;background:var(--accent);border-radius:1px;width:0;transition:width 1s ease;}
+.sk-desc{font-size:.82rem;color:var(--muted);line-height:1.85;}
+
+/* ── SERVICES ── */
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.sv{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:34px 26px;transition:border-color .22s,transform .22s;position:relative;overflow:hidden;
+}
+.sv-line{position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .3s;}
+.sv:hover{border-color:var(--border2);transform:translateY(-4px);}
+.sv:hover .sv-line{opacity:1;}
+.sv-num{font-size:.62rem;color:var(--border2);letter-spacing:.12em;margin-bottom:18px;font-weight:600;}
+.sv-icon{width:34px;height:34px;border-radius:7px;background:#fff;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;padding:6px;}
+.sv-icon img{width:100%;height:100%;object-fit:contain;display:block;max-width:22px;max-height:22px;}
+.sv-title{font-size:.92rem;font-weight:600;color:var(--fg);margin-bottom:10px;}
+.sv-desc{font-size:.8rem;color:var(--muted);line-height:1.8;}
+
+/* ── CONTACT ── */
+.ct-card{
+  max-width:660px;margin:0 auto;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:14px;padding:56px 44px;text-align:center;
+}
+.ct-card p{color:#999;font-size:.9rem;line-height:1.9;margin-bottom:34px;}
+.ct-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.ct-link{
+  display:flex;align-items:center;gap:9px;
+  padding:10px 18px;border-radius:7px;
+  border:1px solid var(--border);background:transparent;
+  color:var(--accent);text-decoration:none;font-size:.76rem;letter-spacing:.04em;
+  transition:all .22s;
+}
+.ct-link:hover{border-color:var(--accent);color:var(--fg);}
+.ct-icon{width:16px;height:16px;object-fit:contain;display:block;}
+
+/* ── FOOTER ── */
+footer{
+  border-top:1px solid var(--border);padding:24px 64px;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:.7rem;color:var(--muted);letter-spacing:.04em;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  #hero{grid-template-columns:1fr;padding:110px 40px 60px;text-align:center;}
+  .hero-right{margin:0 auto;max-width:340px;}
+  .photo-scene{width:160px;height:160px;}
+  .h-pills,.h-actions{justify-content:center;}
+  .h-sub{margin-left:auto;margin-right:auto;}
+  .about-grid{grid-template-columns:1fr;gap:44px;}
+  .wrap{padding:0 32px;}
+  .sv-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  nav{padding:0 20px;}
+  .nav-links{display:none;}
+  section{padding:70px 0;}
+  footer{padding:18px 24px;flex-direction:column;gap:8px;text-align:center;}
+  .ct-card{padding:36px 22px;}
+  .sv-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="#hero" class="logo" style="text-decoration: none;">M. Huzair <em>Alam</em></a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="mailto:mhuzairalam@gmail.com" class="nav-btn">Hire Me</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+
+  <div class="hero-left">
+    <div class="status-badge">
+      
+      Available Worldwide
+    </div>
+
+    <h1 class="h-name">
+      M. Huzair<em>Alam</em>
+    </h1>
+
+    <p class="h-sub">
+      Digital Marketing Expert helping brands grow online through strategy, creative design, and performance-driven campaigns.
+    </p>
+
+    <div class="h-pills">
+      <a href="#skills" class="pill" onclick="setTimeout(()=>{document.querySelectorAll('.sk-item')[0].querySelector('.sk-head').click()},400);">Digital Marketing</a>
+      <a href="#skills" class="pill" onclick="setTimeout(()=>{document.querySelectorAll('.sk-item')[1].querySelector('.sk-head').click()},400);">Graphic Design</a>
+      <a href="#skills" class="pill" onclick="setTimeout(()=>{document.querySelectorAll('.sk-item')[2].querySelector('.sk-head').click()},400);">Shopify</a>
+      <a href="#skills" class="pill" onclick="setTimeout(()=>{document.querySelectorAll('.sk-item')[3].querySelector('.sk-head').click()},400);">Google Ads</a>
+      <a href="#skills" class="pill" onclick="setTimeout(()=>{document.querySelectorAll('.sk-item')[4].querySelector('.sk-head').click()},400);">SEO</a>
+    </div>
+
+    <div class="h-actions">
+      <a href="mailto:mhuzairalam@gmail.com" class="btn btn-w">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        Hire Me
+      </a>
+      <a href="#services" class="btn btn-g">View Services</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="photo-scene">
+      <div class="photo-box">
+
+        <!--
+        ╔═══════════════════════════════════════════════╗
+        ║        PHOTO LAGANE KA TARIKA                ║
+        ╠═══════════════════════════════════════════════╣
+        ║  1. imgbb.com kholo (bilkul free)            ║
+        ║  2. Apni photo upload karo                   ║
+        ║  3. "Direct Link" (.jpg wala) copy karo      ║
+        ║  4. Notepad mein is file ko kholo            ║
+        ║  5. Ctrl+F → search karo: ph-wrap            ║
+        ║  6. Poora <div class="ph-wrap">...</div>     ║
+        ║     delete karo                              ║
+        ║  7. Us jagah paste karo:                     ║
+        ║                                              ║
+        ║  <img src="YAHAN_IMGBB_LINK"                 ║
+        ║       alt="M. Huzair Alam"                      ║
+        ║       style="width:100%;height:100%;         ║
+        ║       object-fit:cover;display:block;        ║
+        ║       position:absolute;inset:0;z-index:1;"/>║
+        ║                                              ║
+        ║  8. Save → GitHub upload                     ║
+        ╚═══════════════════════════════════════════════╝
+        -->
+
+        <!--
+        ╔═══════════════════════════════════════════════╗
+        ║        PHOTO LAGANE KA TARIKA                ║
+        ╠═══════════════════════════════════════════════╣
+        ║  1. imgbb.com kholo (free)                   ║
+        ║  2. Photo upload karo                        ║
+        ║  3. "Direct Link" copy karo                  ║
+        ║  4. Neeche PHOTO_LINK_YAHAN ki jagah         ║
+        ║     apna link paste karo                     ║
+        ║  5. File save karo → GitHub upload           ║
+        ╚═══════════════════════════════════════════════╝
+        -->
+        <img src="https://i.ibb.co/Z1b5LTBQ/quality-restoration-20260704193335394.png"
+             alt="M. Huzair Alam"
+             id="profile-photo"
+             onerror="this.style.display='none'; document.getElementById('ph-fallback').style.display='flex';"
+             style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;z-index:1;"/>
+        <div id="ph-fallback" style="display:flex;flex-direction:column;align-items:center;gap:16px;color:var(--border2);">
+          <div class="ph-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <div class="ph-text">Your profile picture<br/> will appear here.</div>
+        </div>
+
+      </div>
+
+      <div class="photo-badge">
+        
+        <div>
+          <div class="badge-name">M. Huzair Alam</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="ey">Who I Am</p>
+      <h2 class="sh">About <em>Me</em></h2>
+      <div class="rule"></div>
+      <div class="about-grid">
+        <div class="ab-text">
+          <p>
+            I'm <strong>M. Huzair Alam</strong>, a passionate Digital Marketing Expert based in Pakistan dedicated to helping businesses build a strong, results-driven online presence.
+          </p>
+          <p>
+            My expertise spans <strong>Digital Marketing, Graphic Design, Shopify Development, Google Ads,</strong> and <strong>SEO</strong> covering everything from brand identity and creative design to paid advertising and  e-commerce store setup.
+          </p>
+          <p>
+            I approach every project with full commitment and a clear focus on delivering real, measurable value because your success online is my priority.
+          </p>
+          <div class="ab-note">
+            <strong>Currently accepting new clients.</strong> <br/>Whether you're a startup, small business, or growing brand I'm ready to help you win online. Let's connect and build something great together.
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-n">5+</div><div class="stat-l">Skills Mastered</div></div>
+          <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Commitment</div></div>
+          <div class="stat"><div class="stat-n">24/7</div><div class="stat-l">Available Online</div></div>
+          <div class="stat"><div class="stat-n" style="filter:grayscale(1) brightness(3);">🌐</div><div class="stat-l">Remote Work</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec-dark">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="ey">What I Know</p>
+      <h2 class="sh">My <em>Skills</em></h2>
+      <div class="rule"></div>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:28px;margin-top:-36px;">
+        Click on any skill to see details ↓
+      </p>
+      <div class="skills-list">
+
+        <!-- 1. Digital Marketing -->
+        <div class="sk-item" data-pct="90">
+          <div class="sk-head" onclick="toggleSkill(this)">
+            <div class="sk-logo"><img src="https://cdn.simpleicons.org/meta/0467DF" alt="Meta" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+            <span class="sk-label">Digital Marketing</span>
+            <svg class="sk-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-bar-bg"><div class="sk-bar-fill"></div></div>
+            <p class="sk-desc">I plan and execute full-scale digital marketing strategies that drive brand awareness, lead generation, and business growth. From audience research to multi-channel campaign management data-first, results-focused.</p>
+          </div>
+        </div>
+
+        <!-- 2. Graphic Design -->
+        <div class="sk-item" data-pct="82">
+          <div class="sk-head" onclick="toggleSkill(this)">
+            <div class="sk-logo"><svg viewBox="0 0 48 48" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+  <rect width="48" height="48" rx="5" fill="#FA0F00"/>
+  <path d="M18.5 11 L9 37 H16 L18.5 30 Z" fill="white"/>
+  <path d="M29.5 11 L39 37 H32 L29.5 30 Z" fill="white"/>
+  <path d="M24 19.5 L28 30 H20 Z" fill="white"/>
+</svg></div>
+            <span class="sk-label">Graphic Designing</span>
+            <svg class="sk-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-bar-bg"><div class="sk-bar-fill"></div></div>
+            <p class="sk-desc">Professional brand identities, logos, social media graphics, banners and marketing creatives. I design visuals that are not just beautiful but strategically effective and on-brand.</p>
+          </div>
+        </div>
+
+        <!-- 3. Shopify -->
+        <div class="sk-item" data-pct="80">
+          <div class="sk-head" onclick="toggleSkill(this)">
+            <div class="sk-logo"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+            <span class="sk-label">Shopify Store Development</span>
+            <svg class="sk-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-bar-bg"><div class="sk-bar-fill"></div></div>
+            <p class="sk-desc">I build professional, conversion-optimized Shopify stores from scratch theme setup and customization, product configuration, payment gateway integration, and everything needed for a fully operational online store.</p>
+          </div>
+        </div>
+
+        <!-- 4. Google Ads -->
+        <div class="sk-item" data-pct="88">
+          <div class="sk-head" onclick="toggleSkill(this)">
+            <div class="sk-logo"><img src="https://cdn.simpleicons.org/googleads/4285F4" alt="Google Ads" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+            <span class="sk-label">Google Ads</span>
+            <svg class="sk-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-bar-bg"><div class="sk-bar-fill"></div></div>
+            <p class="sk-desc">I set up and manage Search, Display, and Shopping campaigns built for maximum ROI keyword research, ad copywriting, bid optimization, and conversion tracking to get the most from your ad budget.</p>
+          </div>
+        </div>
+
+        <!-- 5. SEO -->
+        <div class="sk-item" data-pct="85">
+          <div class="sk-head" onclick="toggleSkill(this)">
+            <div class="sk-logo"><img src="https://cdn.simpleicons.org/semrush/FF642B" alt="SEO" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+            <span class="sk-label">SEO Search Engine Optimization</span>
+            <svg class="sk-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-bar-bg"><div class="sk-bar-fill"></div></div>
+            <p class="sk-desc">Complete SEO services technical audits, keyword strategy, on-page optimization, content planning, and link building all aimed at ranking your website on the first page of Google organically.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="ey">What I Offer</p>
+      <h2 class="sh">My <em>Services</em></h2>
+      <div class="rule"></div>
+      <div class="sv-grid">
+
+        <div class="sv">
+          <div class="sv-line"></div>
+          <div class="sv-num">01</div>
+          <div class="sv-icon"><img src="https://cdn.simpleicons.org/meta/0467DF" alt="Meta" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+          <div class="sv-title">Digital Marketing</div>
+          <div class="sv-desc">Full-scale digital marketing strategies audience research, multi-channel campaigns, and data-driven decisions that grow your brand and revenue online.</div>
+        </div>
+
+        <div class="sv">
+          <div class="sv-line"></div>
+          <div class="sv-num">02</div>
+          <div class="sv-icon"><svg viewBox="0 0 48 48" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+  <rect width="48" height="48" rx="5" fill="#FA0F00"/>
+  <path d="M18.5 11 L9 37 H16 L18.5 30 Z" fill="white"/>
+  <path d="M29.5 11 L39 37 H32 L29.5 30 Z" fill="white"/>
+  <path d="M24 19.5 L28 30 H20 Z" fill="white"/>
+</svg></div>
+          <div class="sv-title">Brand & Graphic Design</div>
+          <div class="sv-desc">Logos, brand kits, social media creatives and marketing materials professional visuals that communicate your brand's identity clearly and powerfully.</div>
+        </div>
+
+        <div class="sv">
+          <div class="sv-line"></div>
+          <div class="sv-num">03</div>
+          <div class="sv-icon"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+          <div class="sv-title">Shopify Store Setup</div>
+          <div class="sv-desc">Professional Shopify stores built from scratch theme customization, product setup, payment integration, fully ready to start selling online.</div>
+        </div>
+
+        <div class="sv">
+          <div class="sv-line"></div>
+          <div class="sv-num">04</div>
+          <div class="sv-icon"><img src="https://cdn.simpleicons.org/googleads/4285F4" alt="Google Ads" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+          <div class="sv-title">Google Ads Management</div>
+          <div class="sv-desc">Targeted Search, Display & Shopping campaigns built for maximum ROI low cost-per-click and high-quality conversions that grow your business.</div>
+        </div>
+
+        <div class="sv">
+          <div class="sv-line"></div>
+          <div class="sv-num">05</div>
+          <div class="sv-icon"><img src="https://cdn.simpleicons.org/semrush/FF642B" alt="SEO" style="width:100%;height:100%;object-fit:contain;display:block;padding:2px;"/></div>
+          <div class="sv-title">SEO Optimization</div>
+          <div class="sv-desc">Technical audit, keyword research, on-page optimization and link building get your website ranking on the first page of Google and drive consistent organic traffic.</div>
+        </div>
+
+        <div class="sv">
+          <div class="sv-line"></div>
+          <div class="sv-num">06</div>
+          <div class="sv-icon"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Social Media"/></div>
+          <div class="sv-title">Social Media Marketing</div>
+          <div class="sv-desc">Strategic campaigns on Facebook, Instagram and LinkedIn to grow your audience, build brand authority, and generate consistent qualified leads.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec-dark">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;">
+      <p class="ey">Get In Touch</p>
+      <h2 class="sh">Let's <em>Work Together</em></h2>
+      <div class="rule" style="margin:0 auto 52px;"></div>
+      <div class="ct-card">
+        <p>
+          I'm actively looking for my first clients and fully committed to delivering excellent, professional results.
+          Whether you're a startup, small business, or growing brand reach out and let's build something great together.
+        </p>
+        <div class="ct-grid">
+
+          <!-- INSTAGRAM: apna handle yahan -->
+          <a href="https://www.instagram.com/m.huzair.alam?igsh=MWtua3A1cnl2Ym00Zw==" class="ct-link" target="_blank">
+            <img class="ct-icon" src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram"/>
+            Instagram
+          </a>
+
+          <!-- FACEBOOK: apna handle yahan -->
+          <a href="https://www.facebook.com/share/1BmwSPYfAn/" class="ct-link" target="_blank">
+            <img class="ct-icon" src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook"/>
+            Facebook
+          </a>
+
+          
+          <a href="https://tiktok.com/@m.huzair.alam" class="ct-link" target="_blank">
+            <img class="ct-icon" src="https://cdn.simpleicons.org/tiktok/000000" alt="TikTok"/>
+            TikTok
+          </a>
+
+          <!-- PHONE/WHATSAPP: Apna number yahan daalein -->
+          <a href="https://wa.me/923XXXXXXXXX" class="ct-link" target="_blank">
+            <img class="ct-icon" src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp"/>
+            WhatsApp
+          </a>
+
+          <a href="mailto:mhuzairalam@gmail.com" class="ct-link">
+            <img class="ct-icon" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email"/>
+            mhuzairalam@gmail.com
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 M. Huzair Alam · All rights reserved</span>
+  <span>Digital Marketing Expert · Pakistan</span>
+</footer>
+
+<script>
+// Scroll reveal
+const io = new IntersectionObserver(
+  e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('in'); }),
+  { threshold: 0.09 }
+);
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Skill accordion
+function toggleSkill(header) {
+  const item = header.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.sk-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.sk-bar-fill').style.width = '0';
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    setTimeout(() => {
+      item.querySelector('.sk-bar-fill').style.width = item.dataset.pct + '%';
+    }, 50);
+  }
+}
+</script>
+</body>
+</html>
